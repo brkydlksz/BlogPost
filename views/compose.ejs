@@ -1,10 +1,18 @@
 <%- include("partials/navbar"); -%>
+    <br>
+    <br>
     <h1>compose</h1>
-    <form action="/compose" method="post">
-        <input type="text" name="heading">
+    <br>
+    <br>
+
+
+    <form class="composeform" action="/compose" method="post">
+        <label for="heading">Title</label>
+        <input class="title" type="text" name="heading">
         <br>
-        <br>
-        <input type="text" name="text">
-        <button type="submit">Publish</button>
+        
+        <h3>Content</h3>
+        <textarea type="textarea" name="text"  rows="4" cols="100" placeholder="Share your opinion with us on the subject you want." autocomplete="off" ></textarea>
+        <button class="btn btn-danger" type="submit">Publish</button>
     </form>
 <%- include("partials/footer"); -%>

@@ -1,7 +1,39 @@
-<%- include("partials/navbar"); -%>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand"><a href="/">BLOGLESS</a></p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/compose">ADD POST</a></li>
+          <li id="about"><a href="/AboutUs">ABOUT US</a></li>
+          <li id="contact"><a href="/ContactUs">CONTACT US</a></li>
+        </ul> 
+    </div>
+  </nav>
+</head>
+
+  <body>
+    <div class="container">
+
+        
         <h1><%= head %></h1>
         <p><%= entry %></p>  
 
-     
-<%- include("partials/footer"); -%>
+        </div>
+<div class="footer-padding"></div>
+  <div class="footer">
+  </div>
+</div>
+</body>
+</html>
+
